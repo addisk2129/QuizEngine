@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@theme {
+  /* Fonts */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  /* Primary - Green */
+  --color-primary-50: #E6FFF1;
+  --color-primary-100: #B8FFCC;
+  --color-primary-200: #8AFFA6;
+  --color-primary-300: #6FF889;
+  --color-primary-400: #40FF6A;
+  --color-primary-500: #00ED64;
+  --color-primary-600: #00D058;
+  --color-primary-700: #00C752;
+  --color-primary-800: #009E43;
+  --color-primary-900: #00993B;
+
+  /* Secondary - Teal/Dark Green */
+  --color-secondary-50: #D5E6E1;
+  --color-secondary-100: #A1C4BB;
+  --color-secondary-200: #6DA198;
+  --color-secondary-300: #4F8778;
+  --color-secondary-400: #356A5A;
+  --color-secondary-500: #023430;
+  --color-secondary-600: #022F2B;
+  --color-secondary-700: #021F24;
+  --color-secondary-800: #01171D;
+  --color-secondary-900: #001818;
+
+  /* Tertiary - Dark Blue */
+  --color-tertiary-50: #CCD6E0;
+  --color-tertiary-100: #99ADB7;
+  --color-tertiary-200: #668494;
+  --color-tertiary-300: #4E6B7B;
+  --color-tertiary-400: #335462;
+  --color-tertiary-500: #001E2B;
+  --color-tertiary-600: #001A26;
+  --color-tertiary-700: #001721;
+  --color-tertiary-800: #001218;
+  --color-tertiary-900: #000F14;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+
+  input,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  *:disabled {
+    cursor: not-allowed;
+  }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  
+        @keyframes slideIn {
+          from {
+            transform: translateX(-100%);
+          }
+    
+          to {
+            transform: translateX(0);
+          }
+        }
+    
+        .animate-slideIn {
+          animation: slideIn 0.3s ease-out;   }
+}
