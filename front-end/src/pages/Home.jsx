@@ -1,5 +1,5 @@
 import React from 'react'
-import MainPageLayout from '../layout/MainPagelayout'
+import MainPageLayout from '../layout/MainPageLayout'
 function Home() {
   return <MainPageLayout/>
 }
