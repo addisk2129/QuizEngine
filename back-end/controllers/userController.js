@@ -1,7 +1,7 @@
 // controllers/userController.js
 import User from '../models/user.js';
 import Category from '../models/category.js';
-import Question from '../models/Questions.js';
+import Question from '../models/questions.js';
 import Quiz from '../models/quizz.js';
 import AppError from '../utils/appError.js';
 import catchAsync from '../utils/catchAsync.js';
