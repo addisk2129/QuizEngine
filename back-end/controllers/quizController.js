@@ -1,5 +1,5 @@
 import Quiz from '../models/quizz.js';
-import Category from '../models/Category.js';
+import Category from '../models/category.js';
 import AppError from '../utils/appError.js';
 import catchAsync from '../utils/catchAsync.js';
 
